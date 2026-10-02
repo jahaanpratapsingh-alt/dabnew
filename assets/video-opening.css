@@ -1,0 +1,188 @@
+/* ==========================================================
+   DAB HABITZ — VIDEO OPENING
+   Built around perf_60fps.mp4. No automatic page scrolling.
+========================================================== */
+
+.video-opening {
+  position: relative;
+  min-height: 100svh;
+  height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  background: #0b0705;
+  color: #f3eadc;
+}
+
+.video-opening__film {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center center;
+  background: #0b0705;
+}
+
+/* Plain opening — no white bloom / no gradient wash. */
+.video-opening__veil {
+  display: none;
+}
+
+.video-opening__copy {
+  position: absolute;
+  z-index: 3;
+  left: max(5.8vw, 52px);
+  bottom: clamp(84px, 10.5vh, 128px);
+  width: min(520px, 38vw);
+  pointer-events: none;
+}
+
+.video-opening__eyebrow {
+  margin-bottom: 18px;
+  color: #9c792f;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+}
+
+.video-opening__copy h1 {
+  margin: 0;
+  color: #e8d6d5;
+  font-family: "Italiana", Georgia, serif;
+  font-size: clamp(72px, 8.25vw, 142px);
+  font-weight: 400;
+  line-height: .78;
+  letter-spacing: -.055em;
+  text-wrap: balance;
+}
+
+.video-opening__copy p {
+  margin: 24px 0 0;
+  max-width: 390px;
+  color: rgba(237, 220, 218, 0.66);
+  font-size: 12px;
+  line-height: 1.65;
+  letter-spacing: .02em;
+}
+
+.video-opening__product {
+  position: absolute;
+  z-index: 3;
+  right: max(5.8vw, 52px);
+  bottom: clamp(92px, 11vh, 136px);
+  display: grid;
+  justify-items: end;
+  gap: 7px;
+  text-align: right;
+  color: #35100d;
+  pointer-events: none;
+}
+
+.video-opening__product span,
+.video-opening__product small {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .21em;
+  text-transform: uppercase;
+}
+
+.video-opening__product span { color: #a17c31; }
+.video-opening__product strong {
+  font-family: "Italiana", Georgia, serif;
+  font-size: clamp(24px, 2.2vw, 40px);
+  font-weight: 400;
+  letter-spacing: .01em;
+}
+.video-opening__product small { color: rgba(53, 16, 13, .54); }
+
+.video-opening__scroll {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: rgba(53, 16, 13, .72);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+.video-opening__scroll i {
+  position: relative;
+  width: 1px;
+  height: 34px;
+  overflow: hidden;
+  background: rgba(53, 16, 13, .19);
+}
+
+.video-opening__scroll i::after {
+  content: "";
+  position: absolute;
+  inset: -100% 0 auto;
+  height: 100%;
+  background: #9c792f;
+  animation: dh-opening-scroll-line 1.7s cubic-bezier(.4, 0, .2, 1) infinite;
+}
+
+@keyframes dh-opening-scroll-line {
+  0% { transform: translateY(0); }
+  65%, 100% { transform: translateY(200%); }
+}
+
+/* The dark header remains legible but fades into the luminous film instead of
+   creating a hard rectangular bar. */
+.video-opening + .sequence { margin-top: 0; }
+
+@media (max-width: 900px) {
+  .video-opening {
+    min-height: 100svh;
+    height: 100svh;
+  }
+
+  .video-opening__film {
+    object-position: 52% center;
+  }
+
+
+  .video-opening__copy {
+    left: 24px;
+    right: 24px;
+    bottom: 102px;
+    width: auto;
+  }
+
+  .video-opening__copy h1 {
+    font-size: clamp(62px, 21vw, 102px);
+  }
+
+  .video-opening__copy p {
+    max-width: 280px;
+  }
+
+  .video-opening__product {
+    top: calc(var(--og-header-announcement, 31px) + var(--og-header-main, 60px) + 24px);
+    right: 22px;
+    bottom: auto;
+  }
+
+  .video-opening__product strong { font-size: 24px; }
+  .video-opening__product small { display: none; }
+  .video-opening__scroll { bottom: 24px; }
+}
+
+@media (max-width: 560px) {
+  .video-opening__eyebrow { font-size: 8px; }
+  .video-opening__copy h1 { line-height: .82; }
+  .video-opening__product span { font-size: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video-opening__scroll i::after { animation: none; }
+}

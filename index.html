@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#f6f0e7" name="theme-color"/>
+<title>Dab Habitz — Luxury Perfume</title>
+<link href="./assets/home.css" rel="stylesheet"/>
+<link href="./assets/arcade-nudge.css" rel="stylesheet"/>
+<link href="./assets/final-polish.css" rel="stylesheet"/>
+<link href="./assets/video-opening.css" rel="stylesheet"/></head>
+<body>
+<div class="top-chrome" data-smart-header="">
+<div aria-label="Dab Habitz announcement" class="announcement">
+<div class="announcement-track">
+<span>66 ML EAU DE PARFUM ✦ A FRAGRANCE FOR THE ONES WHO CRAVE MORE ✦ DAB HABITZ ✦</span>
+<span>66 ML EAU DE PARFUM ✦ A FRAGRANCE FOR THE ONES WHO CRAVE MORE ✦ DAB HABITZ ✦</span>
+<span>66 ML EAU DE PARFUM ✦ A FRAGRANCE FOR THE ONES WHO CRAVE MORE ✦ DAB HABITZ ✦</span>
+<span>66 ML EAU DE PARFUM ✦ A FRAGRANCE FOR THE ONES WHO CRAVE MORE ✦ DAB HABITZ ✦</span>
+</div>
+</div>
+<header class="site-header">
+<div class="header-main shell">
+<div class="header-left">
+<a href="#collection">SHOP</a>
+<a href="#the-habit">THE HABIT</a>
+<a href="#play-win">ARCADE</a>
+</div>
+<button aria-label="Open menu" class="menu-toggle" data-menu-toggle="" type="button">MENU</button>
+<a aria-label="Dab Habitz home" class="brand" href="./index.html">
+<img alt="Dab Habitz monogram" src="./assets/logo.png"/>
+<span>DAB HABITZ</span>
+</a>
+<div class="header-actions">
+<a href="#collection">SEARCH</a>
+<button aria-label="Open bag" class="cart-nav-trigger" data-cart-open="" type="button">BAG (<span data-cart-count="">0</span>)</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-menu" data-mobile-menu="">
+<a href="#collection">Shop</a>
+<a href="#the-habit">The Habit</a>
+<a href="#play-win">Arcade</a>
+<a href="./sugarcrash/index.html">Sugar Crash</a>
+<a href="./situationship/index.html">Situationship</a>
+<a href="./darkmatter/index.html">Dark Matter</a>
+<a class="play-win-mobile-link" href="./play-win/index.html"><span>Play &amp; Win ✦</span><small>GAMES · REWARDS</small></a>
+<a href="#faq">FAQs</a>
+</nav>
+</header>
+</div>
+<main>
+<!-- CINEMATIC VIDEO OPENING — autoplay video, no automatic page scrolling -->
+<section class="video-opening" id="opening" aria-label="Dab Habitz opening film">
+  <video class="video-opening__film" id="openingFilm" autoplay muted loop playsinline preload="auto" poster="./assets/perf-poster.jpg">
+    <source src="./assets/perf_60fps.mp4" type="video/mp4"/>
+  </video>
+  <div class="video-opening__veil" aria-hidden="true"></div>
+
+  <div class="video-opening__copy">
+    <div class="video-opening__eyebrow">DAB HABITZ · 66 ML EAU DE PARFUM</div>
+    <h1>CRAVE<br/>MORE.</h1>
+    <p>A fragrance for the ones who crave more.</p>
+  </div>
+
+
+  <a class="video-opening__scroll" href="#the-habit" aria-label="Scroll into the Dab Habitz experience">
+    <span>SCROLL INTO THE HABIT</span><i aria-hidden="true"></i>
+  </a>
+</section>
+
+<!-- AUTO-DETECTED FRAME SCROLL — OG canvas experience, direct manual mapping -->
+<section aria-label="Dab Habitz fragrance ritual" class="sequence" id="dh-scroll-sequence">
+<span aria-hidden="true" class="anchor-target" id="the-habit"></span>
+<div class="sequence-sticky">
+<canvas aria-hidden="true" id="sequenceCanvas"></canvas>
+<img alt="Dab Habitz fragrance campaign" class="sequence-fallback" draggable="false" id="sequenceFallback" src="./assets/frames/frame_0001.jpg"/>
+<div class="seq-copy" id="seqCopy">
+<div class="seq-kicker" id="seqKicker">Dab Habitz · Eau de Parfum</div>
+<h2 class="seq-title" id="seqTitle">THE RITUAL<br/>STARTS HERE.</h2>
+<p class="seq-sub" id="seqSub">
+            Not something you simply wear. Something that becomes part of the room after you leave it.
+          </p>
+</div>
+<div aria-hidden="true" class="scroll-mark">
+<span>Scroll to enter</span><i></i>
+</div>
+<div aria-hidden="true" class="sequence-loader" id="sequenceLoader">
+<span>Loading film</span>
+<div><i id="sequenceLoaderFill"></i></div>
+</div>
+</div>
+</section>
+<section class="collection section" id="collection">
+<div class="shell">
+<div class="section-heading">
+<div>
+<div class="eyebrow dark-eyebrow">THE COLLECTION</div>
+<h2>Three personalities.</h2>
+</div>
+<p>Different moods. Same obsession.</p>
+</div>
+<div class="collection-grid">
+<article class="collection-item collection-item-sugar"><a class="collection-card collection-card-sugar" href="./sugarcrash/index.html">
+<div class="collection-image">
+<img alt="Sugar Crash perfume" src="./assets/sugar-crash-portrait.jpg"/>
+</div>
+<div class="collection-card-copy">
+<span>01 · GOURMAND</span>
+<h3>Sugar Crash</h3>
+<p>Vanilla · Brown Sugar · Caramel</p>
+<b>View fragrance ↗</b>
+</div>
+</a><button class="collection-add" data-add-cart="sugar" type="button"><span>ADD TO BAG · 66 ML</span><b>+</b></button></article>
+<article class="collection-item collection-item-situation"><a class="collection-card collection-card-situation" href="./situationship/index.html">
+<div class="collection-image">
+<img alt="Situationship perfume" src="./assets/situationship-portrait.jpg"/>
+</div>
+<div class="collection-card-copy">
+<span>02 · SENSUAL</span>
+<h3>Situationship</h3>
+<p>Amber · Smoke · Spice</p>
+<b>View fragrance ↗</b>
+</div>
+</a><button class="collection-add" data-add-cart="situationship" type="button"><span>ADD TO BAG · 66 ML</span><b>+</b></button></article>
+<article class="collection-item collection-item-dark"><a class="collection-card collection-card-dark" href="./darkmatter/index.html">
+<div class="collection-image">
+<img alt="Dark Matter perfume" src="./assets/dark-matter-portrait.jpg"/>
+</div>
+<div class="collection-card-copy">
+<span>03 · OUD</span>
+<h3>Dark Matter</h3>
+<p>Oud · Saffron · Amber</p>
+<b>View fragrance ↗</b>
+</div>
+</a><button class="collection-add" data-add-cart="darkmatter" type="button"><span>ADD TO BAG · 66 ML</span><b>+</b></button></article>
+</div>
+</div>
+</section>
+<section aria-label="Dab Habitz product information" class="marquee marquee-red">
+<div class="marquee-track marquee-track-reverse">
+<span>✦ 66 ML EAU DE PARFUM ✦ LEAVE EVIDENCE ✦ SCENTS THAT STAY IN YOUR HABITS ✦</span>
+<span>✦ 66 ML EAU DE PARFUM ✦ LEAVE EVIDENCE ✦ SCENTS THAT STAY IN YOUR HABITS ✦</span>
+<span>✦ 66 ML EAU DE PARFUM ✦ LEAVE EVIDENCE ✦ SCENTS THAT STAY IN YOUR HABITS ✦</span>
+</div>
+</section>
+
+<!-- DAB HABITZ PLAY & WIN -->
+<section aria-labelledby="play-win-title" class="play-win-portal section" id="play-win">
+<div aria-hidden="true" class="play-win-media">
+<video autoplay="" loop="" muted="" playsinline="" poster="./assets/play-win-poster.jpg" preload="metadata">
+<source src="./assets/play-win-entrance.mp4" type="video/mp4"/>
+</video>
+<div class="play-win-media-shade"></div>
+</div>
+<div class="shell play-win-shell">
+<div class="play-win-kicker-row">
+<span>DAB HABITZ · AFTER HOURS</span>
+<span>5 GAMES · REAL REWARDS</span>
+</div>
+<div class="play-win-copy">
+<div class="eyebrow gold-eyebrow">PLAY &amp; WIN ✦</div>
+<h2 id="play-win-title">PLAY HARDER.<br/><em>WIN BETTER.</em></h2>
+<p>Step into the Dab Habitz arcade. Play the fragrance worlds, build your score and unlock rewards worth up to ₹666.</p>
+<a class="play-win-enter" href="./play-win/index.html">ENTER THE ARCADE <span>↗</span></a>
+</div>
+<div aria-label="Arcade fragrance worlds" class="play-win-worlds">
+<div class="play-world play-world-sugar"><span>SUGAR CRASH</span><b>PAC HABIT · SUGAR RUSH</b></div>
+<div class="play-world play-world-situation"><span>SITUATIONSHIP</span><b>TOXIC ROULETTE</b></div>
+<div class="play-world play-world-dark"><span>DARK MATTER</span><b>PRECISION</b></div>
+</div>
+</div>
+</section>
+<section class="faq section" id="faq">
+<div class="shell faq-grid">
+<div>
+<div class="eyebrow dark-eyebrow">FAQs</div>
+<h2>Questions,<br/>answered.</h2>
+</div>
+<div class="faq-list">
+<article class="faq-item is-open">
+<button class="faq-question" type="button">
+<span>What fragrances are in the collection?</span>
+<b>+</b>
+</button>
+<div class="faq-answer">
+<p>Sugar Crash, Situationship and Dark Matter. All three are 66 ML Eau de Parfum.</p>
+</div>
+</article>
+<article class="faq-item">
+<button class="faq-question" type="button">
+<span>Which one is the gourmand fragrance?</span>
+<b>+</b>
+</button>
+<div class="faq-answer">
+<p>Sugar Crash is the gourmand scent, built around cookies, vanilla, brown sugar, caramel, cookie dough and tonka.</p>
+</div>
+</article>
+<article class="faq-item">
+<button class="faq-question" type="button">
+<span>What is Dark Matter built around?</span>
+<b>+</b>
+</button>
+<div class="faq-answer">
+<p>Dark Matter centers oud, saffron and amber with a darker woody profile.</p>
+</div>
+</article>
+<article class="faq-item">
+<button class="faq-question" type="button">
+<span>What is the Situationship mood?</span>
+<b>+</b>
+</button>
+<div class="faq-answer">
+<p>Situationship is smoky, sensual, spicy and amber-led — built around heat, shadow and tension.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<section class="closing-cta">
+<div class="shell closing-grid">
+<div>
+<h2>Found your habit yet?</h2>
+<p>Three fragrances. Three personalities. Pick the one that stays.</p>
+</div>
+<a class="btn btn-light" href="#collection">Shop the collection</a>
+</div>
+</section>
+<footer class="footer">
+<div class="shell footer-grid">
+<div class="footer-brand">
+<img alt="Dab Habitz" src="./assets/logo.png"/>
+<h3>DAB HABITZ</h3>
+<p>A fragrance house built around appetite, tension and after-effect.</p>
+</div>
+<div>
+<h4>SHOP</h4>
+<a href="./sugarcrash/index.html">Sugar Crash</a>
+<a href="./situationship/index.html">Situationship</a>
+<a href="./darkmatter/index.html">Dark Matter</a>
+</div>
+<div>
+<h4>HOUSE</h4>
+<a href="#play-win">Arcade</a>
+<a href="#faq">FAQs</a>
+<a href="#collection">Collection</a>
+</div>
+<div>
+<h4>FOLLOW</h4>
+<a href="#">Instagram</a>
+<a href="#">Pinterest</a>
+<a href="#">Contact</a>
+</div>
+</div>
+<div class="shell copyright">
+      © 2026 DAB HABITZ · A FRAGRANCE FOR THE ONES WHO CRAVE MORE.
+    </div>
+</footer>
+<script src="./assets/video-opening.js"></script>
+<script src="./assets/home.js"></script>
+
+<script src="./assets/arcade-nudge.js"></script>
+<script src="./assets/cart.js"></script></body>
+</html>
