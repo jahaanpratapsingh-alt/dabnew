@@ -16,7 +16,7 @@
   // ONE sensitivity control.
   // Higher = more physical scrolling per frame / less sensitive.
   // 2.0 quick, 3.0 balanced, 4.0 slow, 5.0 very slow.
-  const SCROLL_DISTANCE_PER_FRAME_VH = .8;
+  const SCROLL_DISTANCE_PER_FRAME_VH = 1;
 
 
   const clamp = (value, min, max) =>
@@ -119,7 +119,7 @@
 
   revealItems.forEach((el, index) => {
     el.classList.add("scroll-reveal");
-    el.style.setProperty("--reveal-delay", `${(index % 4) * 55}ms`);
+    el.style.setProperty("--reveal-delay", `${(index % 4) * 10}ms`);
   });
 
   if ("IntersectionObserver" in window) {
@@ -207,8 +207,8 @@
   const scrollMoments = [
     {
       id: "statement",
-      at: 0.055,
-      end: 0.205,
+      at: 0.02,
+      end: 0.400,
       className: "is-statement is-left",
       eyebrow: "DAB HABITZ · 66 ML",
       title: "LEAVE<br>EVIDENCE.",
@@ -216,8 +216,8 @@
     },
     {
       id: "arcade",
-      at: 0.285,
-      end: 0.455,
+      at: 0.405,
+      end: 0.700,
       className: "is-card is-right",
       eyebrow: "AFTER HOURS · FOUND IT",
       title: "THERE'S AN<br>ARCADE INSIDE.",
@@ -229,8 +229,8 @@
     },
     {
       id: "habit",
-      at: 0.535,
-      end: 0.715,
+      at: 0.705,
+      end: 1.01,
       className: "is-habit-picker",
       eyebrow: "PICK A SIDE",
       title: "WHAT DO YOU<br>CRAVE?",
@@ -239,15 +239,6 @@
         { label: "HEAT + TENSION", sub: "SITUATIONSHIP", href: "./situationship/index.html" },
         { label: "DARK + DEEP", sub: "DARK MATTER", href: "./darkmatter/index.html" }
       ]
-    },
-    {
-      id: "closing",
-      at: 0.805,
-      end: 0.965,
-      className: "is-statement is-center",
-      eyebrow: "THE HOUSE OF DAB HABITZ",
-      title: "CRAVE<br>MORE.",
-      body: "Keep scrolling. The collection is waiting."
     }
   ];
 

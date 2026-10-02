@@ -2380,7 +2380,7 @@ html.dh-auto-scrolling {
 
 /* Big editorial text moments — intentionally not boxed. */
 .dh-scroll-moment.is-statement {
-  color: #35100d;
+  color: #f9f8f7;
   width: min(620px, 44vw);
   text-shadow: 0 1px 20px rgba(255,255,255,.2);
 }
@@ -2395,7 +2395,7 @@ html.dh-auto-scrolling {
 }
 
 .dh-scroll-moment.is-statement .dh-scroll-moment__body {
-  color: rgba(53,16,13,.7);
+  color: rgba(246, 152, 0, 0.7);
 }
 
 .dh-scroll-moment.is-left {
@@ -2511,7 +2511,7 @@ html.dh-auto-scrolling {
   bottom: clamp(38px, 6vh, 72px);
   width: min(900px, calc(100vw - 80px));
   padding: 0;
-  color: #33100e;
+  color: #faf8f8;
   text-align: center;
   transform: translate3d(-50%, 24px, 0);
 }
